@@ -10,6 +10,7 @@ It covers:
 4. final client copy with source, Paper Planes, Balakhnin-register and AI-slop checks;
 5. art direction, built-in visual quality and Loop Engineering improvement;
 6. real-image retouching and Image2 generation;
+   for future HTML/PDF materials, Image2 produces 3–4 interface boards with real screens, grids, charts, forms and navigation rather than an atmospheric photo collage;
 7. client brand, logo, typography and asset application;
 8. standalone HTML and verified PDF production;
 9. client cabinet, self-contained review HTML and PP Pages publication;

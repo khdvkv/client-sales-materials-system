@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.0 — 2026-07-17
+
+- added a dedicated Image2 interface-moodboard prompt for future HTML/PDF materials;
+- requires 3–4 materially distinct interface boards with 6–8 representative screens each;
+- added grids, navigation, charts, forms, editable states and token/component strips as required objects;
+- added `wrong_artifact_type` rejection for atmospheric photo, palette and texture moodboards;
+- added a regression scenario that blocks photography moodboards from substituting interface directions.
+
 ## 1.0.0 — 2026-07-17
 
 - added the twelve-phase end-to-end production cycle;

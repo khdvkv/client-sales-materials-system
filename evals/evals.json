@@ -255,6 +255,20 @@
         "Includes an eval and rollback for any shared rule candidate"
       ],
       "files": []
+    },
+    {
+      "id": 21,
+      "prompt": "Покажи через Image2 три-четыре направления будущего HTML/PDF-кабинета. Генератор вернул красивые фотографии клиники, палитру, материалы и один пустой hero-экран.",
+      "expected_output": "Rejects the output as the wrong artifact type and regenerates 3-4 interface moodboards built from real representative screens, grids, navigation, charts, forms, editable states and a token/component strip.",
+      "assertions": [
+        "Classifies an atmosphere or photography collage as wrong_artifact_type",
+        "Requires 3-4 materially distinct interface boards",
+        "Shows 6-8 real screen types from the accepted meaning plan on every board",
+        "Includes grid, typography, navigation, charts, forms, editable states and component tokens",
+        "Rejects cosmetic palette and photography variations as separate territories",
+        "Uses a Human Gate only after the interface boards pass artifact-type QA"
+      ],
+      "files": []
     }
   ]
 }

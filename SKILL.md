@@ -3,7 +3,7 @@ name: client-sales-materials-system
 description: "Use when a client needs a system, portfolio, roadmap, audit, refresh or production program of sales-support materials across one or more channels and sales stages. Covers research, material selection, reference-backed visual direction, Image2 moodboards, copy, production handoffs, QA and learning from use. Use for requests such as 'материалы поддержки продаж', 'линейка материалов', 'пакет продаж', 'sales kit', 'что нужно менеджеру на каждом этапе', 'пересобрать все материалы', or 'сделать материалы в фирменном стиле'. Do not use as the owner of one already-defined КП, deck or file: route that asset to its genre/format owner after the programme brief is approved."
 governance: "SS-10.7 GENRE"
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   source_repository: "https://github.com/khdvkv/client-sales-materials-system"
 ---
 
@@ -178,6 +178,8 @@ Complete `style-extract` before choosing a territory. The resulting receipt sepa
 
 Use the reference board to write 2–3 distinct visual territories. Each territory includes a representative buyer-facing fragment: for example, one slide, page, catalogue spread, landing hero or CRM card.
 
+When the target is a future HTML/PDF presentation, slidument, interactive catalogue or client cabinet, use [the Image2 interface-moodboard prompt](references/image2-interface-moodboard-prompt.md). Generate 3–4 materially distinct boards showing the future interface system: multiple real screen types, grid, typography, navigation, charts, forms, editable fields and component behaviour. A photography, palette or atmosphere collage does not satisfy an interface-moodboard request and must be rejected before the Human Gate.
+
 Generate or edit the visual fragment with Image2 only after the territory specifies:
 
 - the scene, object, location and people if applicable;
@@ -322,6 +324,7 @@ Mark readiness precisely:
 - [ ] Existing client brand assets were opened before any redesign.
 - [ ] Current external references have URLs or screenshots and freshness status.
 - [ ] The moodboard contains transfer mechanics and do-not-copy constraints.
+- [ ] For HTML/PDF interface work, Image2 produced 3–4 materially distinct boards; each shows 6–8 representative screens and a token/component strip, with no atmosphere or photography collage substituted for the interface.
 - [ ] Image2 images are specific to the asset role and do not repeat without a decision.
 - [ ] The anchor material has passed all nine MECE material-stack layers, including information objects, layout, components and technical release.
 - [ ] Client language uses concrete roles, documents, evidence, deadlines and decisions.
