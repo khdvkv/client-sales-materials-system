@@ -1,0 +1,260 @@
+{
+  "skill_name": "client-sales-materials-system",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "У промышленной компании есть старый корпоративный буклет, несколько презентаций и сайт. Нужна система материалов, чтобы продавать комплексные инженерные проекты крупным заказчикам.",
+      "expected_output": "Creates a material register before files, maps assets to buyer situations, reads existing brand and evidence, requests current references, produces Image2 moodboard territories, and routes each asset to a specialised production owner.",
+      "assertions": [
+        "Builds a material register with audience, buyer situation, proof, channel, next action and measure",
+        "Does not rewrite approved facts without a source or decision",
+        "Includes category, analog and current-reference layers",
+        "Uses an Image2 moodboard gate before batch production",
+        "Separates programme ownership from individual asset production"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Нам нужно за две недели сделать двадцать материалов поддержки продаж для клиники.",
+      "expected_output": "Prioritises a portfolio and production waves, starts with an anchor asset, applies source and claim gates, and does not treat the requested count as permission to skip individual briefs or reviews.",
+      "assertions": [
+        "Prioritises by buyer impact, proof readiness, frequency and urgency",
+        "Proposes waves rather than a uniform batch",
+        "Requires an approved visual territory before scaling",
+        "Includes client-ready and effect-verified as distinct states"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Сделай одно коммерческое предложение в PDF для клиента.",
+      "expected_output": "Does not claim ownership of the single proposal. Routes it to commercial-proposal-generator, with this skill available only if a wider material programme is requested.",
+      "assertions": [
+        "Routes to commercial-proposal-generator",
+        "Avoids creating a redundant portfolio workflow for one defined asset"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "У клиента есть сайт, старый каталог и логотип. Сначала надо понять, что оставить из стиля, а затем показать три направления для новой серии каталогов.",
+      "expected_output": "Runs style-extract on named client sources, produces a style receipt, builds reference-backed territories that differ in proof mechanism, and asks for direction approval before catalogue production.",
+      "assertions": [
+        "Creates a source-bound style receipt",
+        "Separates retained codes, channel corrections and unverified assumptions",
+        "Offers 2-3 materially distinct territories",
+        "Includes Image2 representative fragments and do-not-transfer constraints",
+        "Requires a direction receipt before batch production"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "На втором слайде каталога текст наезжает на схему, фотография размыта, а клиент просит убрать техническую подпись.",
+      "expected_output": "Runs render-critique against the approved brief, applies a minimal repair, re-renders, confirms the observed result, and keeps technical notes out of the client-visible file.",
+      "assertions": [
+        "Checks hierarchy, brand fit, visual accuracy and surface quality",
+        "Uses revise_current_iteration for the current defect",
+        "Requires fresh render inspection after the patch",
+        "Separates surface readiness from first-use effect verification"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Есть 12-слайдовая презентация: везде тёмный фон, красный акцент, один и тот же тип карточек и похожие ИИ-фотографии. Технически всё ровно, но арт-директор ставит 6 из 10.",
+      "expected_output": "Runs the visual benchmark, diagnoses template repetition rather than only layout errors, reviews a nine-reference board, scores anchor slides, repairs the direction before expanding production, and verifies a fresh sequence render.",
+      "assertions": [
+        "Uses the 2026 scorecard and identifies dimensions below threshold",
+        "Flags repeated layout grammar and generic industrial coding",
+        "Requires art-direction briefs for high-visibility generated images",
+        "Reviews non-adjacent assets and a full contact sheet",
+        "Uses replan_from_current_state when the visual direction needs replacement"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Клиент просит презентацию мирового уровня. Дизайнер собрал девять красивых ссылок, сделал три тёмно-красных варианта и выбрал самый аккуратный.",
+      "expected_output": "Rejects the superficial direction process, builds a 12-reference atlas with transferable units, writes a client-specific creative proposition, forces materially divergent territories, and runs separate art-direction plus buyer-and-brand critiques.",
+      "assertions": [
+        "Requires four category, four analog and four creative references",
+        "Records adaptation and exclusion for every reference",
+        "Rejects cosmetic territory variations",
+        "Uses two independent critique passes",
+        "Tests client-language uniqueness after removing the logo"
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "После двух правок слайд чистый, фотография дорогая, но арт-директор говорит, что это обычный шаблон для любой промышленной компании.",
+      "expected_output": "Treats the issue as an art-direction failure, scores client-language uniqueness, uses replan_from_current_state if the territory fails thresholds, records the evidence and stops after two repairs without visible improvement.",
+      "assertions": [
+        "Does not promote clean rendering to art-direction readiness",
+        "Scores uniqueness and requires at least 4/5",
+        "Uses the correct Loop Engineering route",
+        "Creates a learning receipt with a counterexample and eval"
+      ],
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "HTML-презентация 1280×720 проходит проверку заполненности, но пояснения на слайдах набраны 9–11 px. На доказательном слайде остались цифры из старой версии сайта, которых сейчас нет на официальной странице.",
+      "expected_output": "Treats readability and evidence freshness as current-iteration failures, measures type roles, enlarges meaningful copy, reopens current official sources, removes unsupported statistics and verifies a fresh render.",
+      "assertions": [
+        "Does not use spatial fill as proof of readability",
+        "Uses 12 px as the default body-copy floor for a 1280x720 HTML readout while allowing smaller folios and labels",
+        "Reopens drift-prone official sources before preserving evidence claims",
+        "Removes or downgrades claims absent from the current source",
+        "Inspects the affected pages and the full sequence after re-rendering"
+      ],
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "Для одного клиента нужно последовательно собрать десять презентационных материалов в одной наполняемой HTML-деке, но у каждого материала своя аудитория, источники и отдельный PDF для отправки.",
+      "expected_output": "Creates a cumulative master-deck manifest, isolates sections with stable identifiers and source boundaries, repeats the full research-content-visual-review loop per section, and verifies section-only exports.",
+      "assertions": [
+        "Keeps a master manifest with buyer situation, decision, sources, slide range, export and status",
+        "Assigns stable material and slide identifiers",
+        "Does not merge different buyer situations into one undifferentiated story",
+        "Runs reference, content, art-direction, comment and fresh-render gates for every section",
+        "Reviews non-adjacent sections and the full contact sheet after every three appended sections",
+        "Keeps internal manifest and production statuses out of client exports"
+      ],
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "После одобрения настроения и обложки первой презентации команда автоматически собрала ещё четыре типа материалов в общей деке. Все страницы технически чистые, но заказчик их целиком не видел.",
+      "expected_output": "Stops expansion after the current saved state, labels the additional sections internal prototypes, records the exact human-review boundary and obtains a section-scoped Human Gate before appending or promoting another semantic material type.",
+      "assertions": [
+        "Does not treat approval of mood, cover or anchor slide as approval of a complete section",
+        "Records which full surfaces the reviewer actually saw",
+        "Separates human-accepted decisions from automatic QA",
+        "Keeps unreviewed sections out of client-ready exports and accepted-reference status",
+        "Resumes expansion only after a full-section Human Gate"
+      ],
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "Команда ищет примеры краткого документа для фонда, но приносит медицинские анкеты первичного приёма и технические формы сбора данных. Нужен документ, по которому фонд быстро решает, передавать ли случай центру.",
+      "expected_output": "Names the artifact as a decision brief, rejects intake-form references as the primary archetype, researches documents with the same decision job and records transferable information hierarchy separately from clinical field logic.",
+      "assertions": [
+        "Names the document job and primary surface before reference search",
+        "Distinguishes a decision brief from an intake form",
+        "Uses adjacent clinical documents only for field logic",
+        "Records rejected archetypes and reasons",
+        "Builds the content order from references performing the same reader decision"
+      ],
+      "files": []
+    },
+    {
+      "id": 13,
+      "prompt": "Заказчик просит собрать все десять разделов и посмотреть их одной декой позже. До этого отдельно приняты только два раздела; остальные прошли автоматическую QA.",
+      "expected_output": "Records an explicit complete-deck Human Gate, continues bounded production with every new section marked internal prototype, preserves per-section best-in-class and QA receipts, and waits for full-deck review before promoting unreviewed sections.",
+      "assertions": [
+        "Records the reviewer authorization to move the gate",
+        "Keeps unreviewed sections at internal_prototype",
+        "Preserves best-in-class research for every section",
+        "Runs per-section source, visual, privacy and readability checks",
+        "Does not promote automatically checked sections before complete-deck review"
+      ],
+      "files": []
+    },
+    {
+      "id": 14,
+      "prompt": "В общую HTML-деку встроены принятый десятистраничный раздел и двухстраничный A4-документ. Исходники корректны, но после экспорта несколько разделов показывают первую страницу, а вторая страница A4 пуста.",
+      "expected_output": "Treats the embedded sources as authoritative, fixes the integration route, renders boundary pages and both A4 pages, compares them with accepted exports, and reruns full-deck structural, privacy, contact and language QA.",
+      "assertions": [
+        "Does not infer correct export from correct source HTML",
+        "Checks the first and last page of every section",
+        "Checks every embedded A4 page",
+        "Compares the fresh render with authoritative exports",
+        "Reruns complete-export QA after the integration repair"
+      ],
+      "files": []
+    },
+    {
+      "id": 15,
+      "prompt": "Нужно собрать пакет материалов для нового клиента. В папке есть старые презентации, пять встреч, брендбук и сайт; часть фактов могла измениться.",
+      "expected_output": "Builds a dated fact register from authoritative project files, full meeting transcripts, brand sources and current official external sources before selecting or writing materials.",
+      "assertions": [
+        "Opens authoritative project sources and full meeting transcripts",
+        "Separates confirmed facts, hypotheses, source gaps and privacy constraints",
+        "Rechecks drift-prone facts on current official sources",
+        "Prevents adjacent-project facts and personal contacts from entering client copy"
+      ],
+      "files": []
+    },
+    {
+      "id": 16,
+      "prompt": "В восьмистраничном материале все страницы стали заголовком и четырьмя одинаковыми карточками. Текст корректный, экспорт чистый, но материал выглядит бедно.",
+      "expected_output": "Blocks client-ready status, inspects the complete section and contact sheet, restores purpose-led information objects and visual rhythm, then verifies the weakest body page and full sequence.",
+      "assertions": [
+        "Does not accept technical cleanliness as art-direction quality",
+        "Flags repeated composition grammar and distributed prose",
+        "Uses at least three content-supported page modes for a section longer than five pages",
+        "Checks the weakest body page rather than only the cover",
+        "Stops production expansion until a fresh sequence render passes"
+      ],
+      "files": []
+    },
+    {
+      "id": 17,
+      "prompt": "Есть согласованный смысловой план презентации. Напиши целевой текст, проверь его на ИИ-слоп и голос Балахнина, затем передай в дизайн.",
+      "expected_output": "Writes complete client-visible page copy, applies Paper Planes copy rules first, uses Balakhnin voice only as a register source, resolves conflicts through Sergey hard lints, and removes production notes before visualisation.",
+      "assertions": [
+        "Produces final titles, proof, body, captions and next actions",
+        "Uses paper-planes-copy-chief as the primary client-copy gate",
+        "Uses Balakhnin mechanisms without claiming authorship or copying conflicting negative parallelisms",
+        "Runs an AI-slop and full-sequence terminology pass",
+        "Keeps internal methodology and future-content descriptions out of the material"
+      ],
+      "files": []
+    },
+    {
+      "id": 18,
+      "prompt": "У клиента есть реальные фотографии с разным светом и качеством, логотипы в SVG, брендбук и недостающие сцены. Нужно собрать убедительный визуальный ряд.",
+      "expected_output": "Audits brand assets, prefers documentary client proof, creates a retouch plan that preserves factual reality, generates only missing scenes from Image2 production cards, and records rights, privacy and image QA.",
+      "assertions": [
+        "Opens the actual brand guide, logos, fonts and client photographs",
+        "Separates factual retouching from illustrative alteration",
+        "Uses Image2 only for a named material role with negative constraints",
+        "Adds logos and exact text outside generated imagery",
+        "Checks source, rights, privacy, resolution and intended display size"
+      ],
+      "files": []
+    },
+    {
+      "id": 19,
+      "prompt": "Десять материалов готовы. Нужны самостоятельные HTML и PDF, клиентский кабинет, одна локальная HTML-копия со всеми картинками и публикация в PP Pages под паролем.",
+      "expected_output": "Builds independently usable client-named materials, verified PDFs, an editable cabinet, a dependency-free review HTML and a protected PP Pages deployment with cross-surface QA and backup/merge protection.",
+      "assertions": [
+        "Removes internal material codes and production notes from client navigation",
+        "Verifies each standalone HTML and PDF page range",
+        "Builds one self-contained offline HTML with images and working interactions",
+        "Backs up and compares the existing PP Pages Edit version before update",
+        "Checks preview and public deployment with the shared document password",
+        "Runs privacy, function and cross-surface regression audits"
+      ],
+      "files": []
+    },
+    {
+      "id": 20,
+      "prompt": "После комментария клиента исправили один слайд. Как сделать так, чтобы процесс действительно научился и не уронил качество на следующих материалах?",
+      "expected_output": "Repairs the local defect, reruns protected invariants, records before/after evidence and human/use observation, and promotes a rule only after varied cases, a counterexample, an eval and rollback route.",
+      "assertions": [
+        "Uses the correct Loop Engineering correction route",
+        "Rechecks accepted meaning, visual, source, privacy and export invariants",
+        "Keeps one preference local until broader evidence exists",
+        "Requires a fresh human or use observation for effect_verified",
+        "Includes an eval and rollback for any shared rule candidate"
+      ],
+      "files": []
+    }
+  ]
+}
