@@ -3,7 +3,7 @@ name: client-sales-materials-system
 description: "Use when a client needs a system, portfolio, roadmap, audit, refresh or production program of sales-support materials across one or more channels and sales stages. Covers research, material selection, reference-backed visual direction, Image2 moodboards, copy, production handoffs, QA and learning from use. Use for requests such as 'материалы поддержки продаж', 'линейка материалов', 'пакет продаж', 'sales kit', 'что нужно менеджеру на каждом этапе', 'пересобрать все материалы', or 'сделать материалы в фирменном стиле'. Do not use as the owner of one already-defined КП, deck or file: route that asset to its genre/format owner after the programme brief is approved."
 governance: "SS-10.7 GENRE"
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
   source_repository: "https://github.com/khdvkv/client-sales-materials-system"
 ---
 
@@ -62,6 +62,12 @@ Do not skip a phase because an old deck, template or earlier client project look
 Use [the content and voice gate](references/content-and-voice-gate.md) before visual production. Client-visible copy must be final copy for the target material, never a description of what the material should contain, a production memo or an internal methodological explanation.
 
 `paper-planes-copy-chief` is the primary language gate for Russian client work. `balakhnin-voice` supplies density, direct thesis, mechanism, stable terms and proof discipline. Sergey hard writing lints override corpus markers that conflict with current rules. `text-deai-editor` performs the final AI-slop scan.
+
+Use [the ABCD content logic](references/abcd-content-logic.md) for every buyer-facing material. It checks whether the reader recognises their situation, understands the client benefit, sees relevant reasons to believe and knows the next step plus what will happen after it. ABCD governs the reading path inside the same-job best-in-class genre sequence; it never substitutes a generic four-block template for genre research.
+
+## Reproducible Quality Floor
+
+Use [the reproducible quality floor](references/reproducible-quality-floor.md) for each new semantic material type and after every material correction. It preserves the Human Gate boundary, client-facing meaning, ABCD sequence, source and privacy rules, accepted visual proposition, typography, asset quality and parity between local, standalone and published surfaces.
 
 ## Visual Production and Brand Assets
 
@@ -143,6 +149,7 @@ For every proposed asset record:
 | Buyer situation | what is happening when it is used |
 | Audience and user | buyer role and sender/presenter |
 | Reader job | decision or action this asset enables |
+| ABCD receipt | exact Attention, client Benefits, claim-linked Credentials and Destination route |
 | Proof | cases, data, documents, people, photos, certifications or a stated gap |
 | Channel | meeting, email, CRM, website, event, print, messenger, tender or service touchpoint |
 | Next action | what recipient and sender do after use |
@@ -202,6 +209,7 @@ For each selected material, write a one-page brief:
 - narrative sequence and visual object;
 - format, channel and adaptation variants;
 - link to the approved visual territory;
+- completed ABCD receipt with claim-to-proof links and Destination strength;
 - acceptance criteria and reviewer.
 
 Use the MECE material stack to make the acceptance criteria inspectable. The brief must name the commercial task, proof, reading scenario, principal information object, art-direction proposition, layout rule, asset needs, component set and actual release channel.
@@ -248,23 +256,25 @@ Before release, apply these gates:
 
 1. **Source and claim gate**: every commercial claim is evidenced or removed from client-visible copy.
 2. **Buyer-situation gate**: the material has a named user, moment, decision and next action.
-3. **Voice gate**: `paper-planes-copy-chief` and `text-deai-editor` remove generic AI language, internal labels and unsupported persuasion.
-4. **Visual gate**: `marcom-visual-intelligence` checks reference fit; the production owner checks style, image quality, readability and brand use.
-5. **Format gate**: the relevant builder renders and inspects the actual HTML, PDF, PPTX, DOCX, print or screen surface.
-6. **Portfolio gate**: the register has no unexplained duplication, stage gap, conflicting message or unowned material.
-7. **Visual benchmark gate**: the anchor assets pass the 2026 scorecard, anti-template checks and sequence review in `references/visual-benchmark-2026.md`.
-8. **Art-direction gate**: where the brief requires best-in-class quality, the atlas, divergence set, two critique passes and learning receipt in `references/art-direction-loop.md` are complete.
-9. **Material-stack gate**: every anchor asset has a result for all nine layers in `references/mece-material-stack.md`; image quality is assessed only as the asset layer, alongside information design, layout, components and technical release.
-10. **Measured readability gate**: inspect computed type sizes and the rendered surface at intended viewing distance. For a 1280 × 720 HTML readout, use 12 px as the default floor for meaningful body copy; reserve 9–11 px for folios, short labels and source notes that do not carry the decision. Set a larger floor for a live-room deck. Do not transfer this number mechanically to print, mobile or other canvases.
-11. **Fresh-source proof gate**: reopen drift-prone official sources before finalising evidence pages, statistics, contacts, prices, service formats and legal claims. A previously used number that is absent from the current source returns to `proof_gap` and leaves the client-visible file.
-12. **Master-deck isolation gate**: when a cumulative deck is used, confirm stable section identifiers, correct export range, no cross-material facts without revalidation, and no internal manifest or production status in the client export.
-13. **Master-deck integration gate**: compare the first and last rendered page of every section with its authoritative source; inspect every embedded A4 page; rerun page-count, contact, privacy and language checks on the complete export after the latest local repair.
-14. **Final-copy gate**: every visible phrase belongs to the target client material; internal production notes, methodology labels and descriptions of future content are absent.
-15. **Anti-slop and register gate**: `paper-planes-copy-chief`, `balakhnin-voice` in register mode and `text-deai-editor` have been applied in this order; source facts, client vocabulary and hard Russian lints remain intact.
-16. **Visual-richness gate**: the sequence contains purpose-led information objects, client-specific visual proof and deliberate rhythm; uniform title-plus-card pages cannot receive `client_ready` status.
-17. **Brand-and-assets gate**: every logo, font, photo, retouched image and generated visual has a source, allowed use, role, quality check and approved treatment.
-18. **Cabinet-and-release gate**: each material opens independently, has a verified PDF, uses a full client-world name, and appears in a self-contained review HTML plus the approved publication surface.
-19. **Privacy gate**: no Paper Planes employee contact, personal data, internal code, hidden review status, prompt, source ledger or unrelated project content remains in client-visible files.
+3. **ABCD gate**: the material passes the whole-sequence and page-level checks in `references/abcd-content-logic.md`; evidence is written for the recipient, every important benefit has relevant proof, and Destination describes the first step and what follows.
+4. **Voice gate**: `paper-planes-copy-chief` and `text-deai-editor` remove generic AI language, internal labels and unsupported persuasion.
+5. **Visual gate**: `marcom-visual-intelligence` checks reference fit; the production owner checks style, image quality, readability and brand use.
+6. **Format gate**: the relevant builder renders and inspects the actual HTML, PDF, PPTX, DOCX, print or screen surface.
+7. **Portfolio gate**: the register has no unexplained duplication, stage gap, conflicting message or unowned material.
+8. **Visual benchmark gate**: the anchor assets pass the 2026 scorecard, anti-template checks and sequence review in `references/visual-benchmark-2026.md`.
+9. **Art-direction gate**: where the brief requires best-in-class quality, the atlas, divergence set, two critique passes and learning receipt in `references/art-direction-loop.md` are complete.
+10. **Material-stack gate**: every anchor asset has a result for all nine layers in `references/mece-material-stack.md`; image quality is assessed only as the asset layer, alongside information design, layout, components and technical release.
+11. **Measured readability gate**: inspect computed type sizes and the rendered surface at intended viewing distance. For a 1280 × 720 HTML readout, use 12 px as the default floor for meaningful body copy; reserve 9–11 px for folios, short labels and source notes that do not carry the decision. Set a larger floor for a live-room deck. Do not transfer this number mechanically to print, mobile or other canvases.
+12. **Fresh-source proof gate**: reopen drift-prone official sources before finalising evidence pages, statistics, contacts, prices, service formats and legal claims. A previously used number that is absent from the current source returns to `proof_gap` and leaves the client-visible file.
+13. **Master-deck isolation gate**: when a cumulative deck is used, confirm stable section identifiers, correct export range, no cross-material facts without revalidation, and no internal manifest or production status in the client export.
+14. **Master-deck integration gate**: compare the first and last rendered page of every section with its authoritative source; inspect every embedded A4 page; rerun page-count, contact, privacy and language checks on the complete export after the latest local repair.
+15. **Final-copy gate**: every visible phrase belongs to the target client material; internal production notes, methodology labels and descriptions of future content are absent.
+16. **Anti-slop and register gate**: `paper-planes-copy-chief`, `balakhnin-voice` in register mode and `text-deai-editor` have been applied in this order; source facts, client vocabulary and hard Russian lints remain intact.
+17. **Visual-richness gate**: the sequence contains purpose-led information objects, client-specific visual proof and deliberate rhythm; uniform title-plus-card pages cannot receive `client_ready` status.
+18. **Brand-and-assets gate**: every logo, font, photo, retouched image and generated visual has a source, allowed use, role, quality check and approved treatment.
+19. **Cabinet-and-release gate**: each material opens independently, has a verified PDF, uses a full client-world name, and appears in a self-contained review HTML plus the approved publication surface.
+20. **Privacy gate**: no Paper Planes employee contact, personal data, internal code, hidden review status, prompt, source ledger or unrelated project content remains in client-visible files.
+21. **Reproducible-quality gate**: the bounded loop, protected-invariant recheck, Human Gate boundary and cross-surface checks in `references/reproducible-quality-floor.md` are recorded for every new semantic material type.
 
 Run `render-critique` on each anchor asset and on every asset with a material visual correction. Compare the fresh render against its approved brief, client style receipt and selected territory; patch the smallest defect; re-render; then record the observed change.
 
@@ -320,6 +330,8 @@ Mark readiness precisely:
 ## Quality Checklist
 
 - [ ] A buyer situation, user, proof and next action exist for every material.
+- [ ] Every material has an exact ABCD receipt; Attention names the reader situation, Benefits name client outcomes, Credentials are linked to promises, and Destination shows the first step and what follows.
+- [ ] Evidence pages present recipient-facing proof and its meaning; internal audit or production commentary appears only when that is the material's explicit job.
 - [ ] The register covers the needed journey without filling it with decorative assets.
 - [ ] Existing client brand assets were opened before any redesign.
 - [ ] Current external references have URLs or screenshots and freshness status.
@@ -341,3 +353,4 @@ Mark readiness precisely:
 - [ ] Real and generated visual assets have provenance, role, quality, rights and retouch/generation receipts.
 - [ ] Standalone HTML and PDF files, the self-contained review copy and the published cabinet reproduce the same accepted content.
 - [ ] Privacy and client-world naming checks remove internal codes, personal contacts and production debris.
+- [ ] Every correction has a fresh observation and a protected-invariant recheck; automatic QA and Human Gate status are recorded separately.

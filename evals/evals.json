@@ -269,6 +269,46 @@
         "Uses a Human Gate only after the interface boards pass artifact-type QA"
       ],
       "files": []
+    },
+    {
+      "id": 22,
+      "prompt": "В презентации для пациента сначала идёт история центра, затем перечень процедур, награды и телефон. Проверь материал по ABCD и предложи порядок исправления.",
+      "expected_output": "Rebuilds the reading path so the patient recognises their situation, understands the practical outcome, sees promise-linked healthcare proof and knows the first contact step plus what will happen after it, while preserving the same-job genre sequence.",
+      "assertions": [
+        "Treats ABCD as a whole-material reading path rather than four labelled pages",
+        "Moves the reader situation and desired progress into Attention",
+        "Translates procedures into observable patient Benefits without medical overclaim",
+        "Links Credentials to specific promises with source, freshness and privacy checks",
+        "Raises Destination above a phone number by describing action, response, inputs, timing and first output",
+        "Keeps same-job best-in-class references authoritative for the detailed page order"
+      ],
+      "files": []
+    },
+    {
+      "id": 23,
+      "prompt": "На доказательном слайде буклета для пациента написано: «Мы провели аудит отзывов и выяснили, что пациенты отмечают командную работу». Слайд должен убеждать будущего пациента.",
+      "expected_output": "Classifies the copy as an internal-audit framing, replaces it with permitted recipient-facing evidence and a careful explanation of what it proves, and keeps the audit method only if the material itself is an audit report.",
+      "assertions": [
+        "Restores the intended reader and decision before rewriting",
+        "Shows the evidence itself rather than a production conclusion",
+        "Connects every quotation or review to the exact service-experience claim it supports",
+        "Does not use testimonials to prove an outcome they do not mention",
+        "Treats an explicit management audit report as a valid counterexample"
+      ],
+      "files": []
+    },
+    {
+      "id": 24,
+      "prompt": "После локальной правки один материал выглядит хорошо. В кабинете редактор не открывается, опубликованная версия теряет картинки, а новый тип материала заказчик ещё не видел.",
+      "expected_output": "Keeps the new material internal, reruns protected invariants and cross-surface functional checks, separates automatic QA from the Human Gate, and promotes the section only after the editor, assets, publication parity and human review pass.",
+      "assertions": [
+        "Does not promote a locally clean render to client-ready status",
+        "Exercises editor, navigation, downloads and image loading on the real surfaces",
+        "Compares local, standalone and published content and behaviour",
+        "Records automatic QA and semantic Human Gate separately",
+        "Reruns source, ABCD, visual, privacy, naming and export invariants after repair"
+      ],
+      "files": []
     }
   ]
 }

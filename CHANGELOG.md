@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2.0 — 2026-07-18
+
+- added the Paper Planes ABCD content gate at material, section and high-value-page levels;
+- added claim-to-proof checks, recipient-facing evidence rules and a Destination strength ladder;
+- kept same-job best-in-class genre research authoritative for page count and detailed sequence;
+- added a reproducible cross-project quality floor with Human Gate boundaries and protected-invariant rechecks;
+- separated automatic QA from human acceptance of a new semantic material type;
+- added regression cases for weak ABCD order, internal-audit framing and local/published functional drift.
+
 ## 1.1.0 — 2026-07-17
 
 - added a dedicated Image2 interface-moodboard prompt for future HTML/PDF materials;

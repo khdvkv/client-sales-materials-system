@@ -15,6 +15,8 @@ required_references = [
     "open-design-adapter.md",
     "mece-material-stack.md",
     "image2-interface-moodboard-prompt.md",
+    "abcd-content-logic.md",
+    "reproducible-quality-floor.md",
 ]
 required_terms = [
     "balakhnin-voice",
@@ -24,6 +26,8 @@ required_terms = [
     "Visual-richness",
     "Loop Engineering",
     "Privacy gate",
+    "ABCD",
+    "Reproducible Quality Floor",
 ]
 
 for name in required_references:
@@ -38,6 +42,6 @@ data = json.loads((ROOT / "evals" / "evals.json").read_text(encoding="utf-8"))
 assert data["skill_name"] == "client-sales-materials-system"
 ids = [item["id"] for item in data["evals"]]
 assert len(ids) == len(set(ids)), "duplicate eval ids"
-assert len(ids) >= 21, "expected at least 21 evals"
+assert len(ids) >= 24, "expected at least 24 evals"
 
 print(json.dumps({"ok": True, "references": len(required_references), "evals": len(ids)}, ensure_ascii=False))
